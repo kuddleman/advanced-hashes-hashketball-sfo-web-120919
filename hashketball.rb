@@ -200,11 +200,10 @@ def player_stats(name)
     players_array.each do | player_details_hash |
       if player_details_hash[:player_name] == name
         stats_hash = player_details_hash
-      end 
+      end
     end
-    
+
   end
   sanitized_stats_hash = stats_hash.reject { |key, value| value == name }
   sanitized_stats_hash
 end
-
