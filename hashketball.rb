@@ -1,4 +1,4 @@
-require 'awesomeprint'
+require 'awesome_print'
 
 def game_hash
   game_hash = {
