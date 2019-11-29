@@ -6,4 +6,4 @@ def game_hash
 game_hash
 end
 
-ap game_hash()
+#ap game_hash()
