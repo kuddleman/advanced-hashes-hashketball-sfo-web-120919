@@ -178,5 +178,5 @@ def team_names
       name_array << player_details_hash[:player_name]
     end
   end
-  name_array
+  name_array   
 end
