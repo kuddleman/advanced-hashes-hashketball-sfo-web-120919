@@ -178,5 +178,3 @@ def team_names
   end
   name_array
 end
-
-p team_names
