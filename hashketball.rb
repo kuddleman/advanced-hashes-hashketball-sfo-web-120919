@@ -159,3 +159,9 @@ def shoe_size(name)
   end
   size
 end
+
+def team_colors(team)
+  team = team.to_sym
+  color_array = game_hash[team][:colors]
+  color_array
+end
