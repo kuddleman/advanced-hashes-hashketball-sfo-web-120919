@@ -160,8 +160,12 @@ def shoe_size(name)
   size
 end
 
-def team_colors(team)
-  team = team.to_sym
-  color_array = game_hash[team][:colors]
-  color_array
+def team_colors(name)
+  colors = nil
+  game_hash.each do | team, details_hash |  
+    if details_hash[:team_name] == name
+      colors = details_hash[:colors]
+    end
+  end
+  colors  
 end
