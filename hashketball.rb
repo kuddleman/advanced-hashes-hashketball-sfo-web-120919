@@ -172,11 +172,9 @@ end
 
 def team_names
   name_array = []
-  game_hash.each do | team, details_hash |
-    players_array = details_hash[:players]
-    players_array.each do | player_details_hash |
-      name_array << player_details_hash[:player_name]
-    end
+  game_hash.each do | team, team_details |
+    name = team_details[:team_name]
+    name_array << name
   end
   name_array
 end
