@@ -143,6 +143,6 @@ def num_points_scored (name)
 
   # puts hash[:home][:players][1][:player_name]  # "Reggie"
   # puts hash[:home][:players][1][:points]   # 12
-  end 
+  end
   points_scored
 end
