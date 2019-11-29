@@ -221,7 +221,6 @@ def big_shoe_rebounds
         number_rebounds = player_details_hash[:rebounds]
       end
     end
-  end  
+  end
   number_rebounds
 end
-
