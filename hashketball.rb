@@ -64,7 +64,7 @@ def game_hash
           }
         ]
     },
-    away: {team_name:"",colors:[], players: [{},{},{},{},{}]}
+    away: {}
   }
 
 end
