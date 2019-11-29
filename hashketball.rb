@@ -178,3 +178,17 @@ def team_names
   end
   name_array
 end
+
+def player_numbers(name_of_team)
+  numbers_array = []
+  game_hash.each do | team, details_hash|
+    if details_hash[:team_name] == name_of_team
+     players_details = details_hash[:players]
+     players_details.each do | player |
+      number = player[:number]
+      numbers_array << number
+     end
+    end
+  end
+  numbers_array
+end
