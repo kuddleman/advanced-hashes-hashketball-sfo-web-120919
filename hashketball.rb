@@ -207,3 +207,21 @@ def player_stats(name)
   sanitized_stats_hash = stats_hash.reject { |key, value| value == name }
   sanitized_stats_hash
 end
+
+def big_shoe_rebounds
+  largest_shoe = 0
+  number_rebounds = 0
+
+  game_hash.each do | team, details_hash |
+    players_array = details_hash[:players]
+
+    players_array.each do | player_details_hash |
+      if player_details_hash[:shoe] > largest_shoe
+        largest_shoe = player_details_hash[:shoe]
+        number_rebounds = player_details_hash[:rebounds]
+      end
+    end
+  end  
+  number_rebounds
+end
+
