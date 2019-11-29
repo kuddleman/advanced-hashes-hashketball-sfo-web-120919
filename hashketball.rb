@@ -224,3 +224,20 @@ def big_shoe_rebounds
   end
   number_rebounds
 end
+
+#Bonus questions
+
+def most_points_scored
+  most_points = 0
+  high_player = ""
+  game_hash.each do | team, details_hash |
+    players_array = details_hash[:players]
+    players_array.each do | player_details_hash |
+      if player_details_hash[:points] > most_points
+        most_points = player_details_hash[:points]
+        high_player = player_details_hash[:player_name]
+      end
+    end
+  end
+  high_player
+end
