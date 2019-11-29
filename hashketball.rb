@@ -162,7 +162,7 @@ end
 
 def team_colors(name)
   colors = nil
-  game_hash.each do | team, details_hash |  
+  game_hash.each do | team, details_hash |
     if details_hash[:team_name] == name
       colors = details_hash[:colors]
     end
