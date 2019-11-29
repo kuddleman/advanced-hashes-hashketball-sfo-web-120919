@@ -167,7 +167,7 @@ def team_colors(name)
       colors = details_hash[:colors]
     end
   end
-  colors  
+  colors
 end
 
 def team_names
