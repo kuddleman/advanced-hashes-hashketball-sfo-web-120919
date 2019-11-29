@@ -7,13 +7,3 @@ game_hash
 end
 
 ap game_hash()
-
-
-
-
-
-
-
-
-
-
