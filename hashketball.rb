@@ -129,3 +129,9 @@ def game_hash
   }
 
 end
+
+# return the number of points scored
+def num_points_scored(name)
+  points_scored = 
+  points_scored
+end
