@@ -192,3 +192,19 @@ def player_numbers(name_of_team)
   end
   numbers_array
 end
+
+def player_stats(name)
+  stats_hash = {}
+  game_hash.each do | team, details_hash |
+    players_array = details_hash[:players]
+    players_array.each do | player_details_hash |
+      if player_details_hash[:player_name] == name
+        stats_hash = player_details_hash
+      end 
+    end
+    
+  end
+  sanitized_stats_hash = stats_hash.reject { |key, value| value == name }
+  sanitized_stats_hash
+end
+
