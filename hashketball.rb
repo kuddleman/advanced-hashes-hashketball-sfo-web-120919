@@ -156,6 +156,6 @@ def shoe_size(name)
         size = player_details_hash[:shoe]
       end
     end
-  end  
+  end
   size
 end
