@@ -283,12 +283,12 @@ def player_with_longest_name
     end
   end
   player
-end 
+end
 
 #SUPER BONUS
 
-# Write a method that returns true if the player with the longest name 
-# had the most steals. 
+# Write a method that returns true if the player with the longest name
+# had the most steals.
 # Call the method long_name_steals_a_ton?.
 
 
@@ -305,14 +305,14 @@ def player_with_most_steals
         most_steals = player_details_hash[:steals]
         name = player_details_hash[:player_name]
       end
-    end  
+    end
   end
   name
 end
 
 
-# Write a method that returns true if the player with the longest name 
-# had the most steals. 
+# Write a method that returns true if the player with the longest name
+# had the most steals.
 # Call the method long_name_steals_a_ton?.
 
 def long_name_steals_a_ton?
