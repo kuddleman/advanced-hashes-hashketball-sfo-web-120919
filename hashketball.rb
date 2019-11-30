@@ -241,3 +241,28 @@ def most_points_scored
   end
   high_player
 end
+
+def winning_team
+  points = {}
+
+  high_scoring_team = ""
+  game_hash.keys.each do |team|
+   
+      game_hash[team][:players].each do | player, stats |
+        #puts player[:points]
+        if points[team]
+          points[team] += player[:points]
+        else
+          points[team] = player[:points]
+        end
+      end
+  end  
+  best_score = 0
+  points.each do | team, total_points |
+    if total_points > best_score
+      best_score = total_points
+      high_scoring_team = game_hash[team][:team_name]
+    end
+  end  
+  high_scoring_team
+end
